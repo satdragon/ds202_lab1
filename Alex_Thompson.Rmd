@@ -7,22 +7,21 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+# Questions
+**Name?**
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Alex Thompson
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+**What do I tell people about my field of study?**
 
-```{r cars}
-summary(cars)
-```
+It's boring and I'm in it for the money
 
-## Including Plots
+**Most important tools for organizing my work? **
 
-You can also embed plots, for example:
+For programming git is the best tool for managing verisions, at elast that is free and used by a lot of people
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+**Interesting Fact?**
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+I am a herpetologist, which means I keep and raise a lot of reptiles, ask me about my chameleon!
+
+
