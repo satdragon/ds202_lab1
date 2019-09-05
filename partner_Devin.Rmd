@@ -1,0 +1,17 @@
+---
+title: "partner_Devin.Rmd"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+**Full Name and username**
+Devin Erb deerb
+**what did the owner do in the most recent commit? what is the commit id?**
+    Updataed Alex_Thompson files
+    fc816098abffb1c081790743ee2955acfb76dad5
+**knit owners thing**
+done
+**error i encountered**
+nothing worked
