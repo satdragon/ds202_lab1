@@ -1,0 +1,22 @@
+---
+title: "Owner_Devin"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**name**
+Devin Erb
+
+**what do you tell poeple about your feild of study at a party**
+I study Spanish and sometimes data science
+
+**Strategies and tools to organize my work**
+1. Always label everything
+2. Make sure its backed up
+3. Have a copy if its important
+
+**Interesting fact about me**
+I have a pet bird
