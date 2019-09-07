@@ -1,0 +1,103 @@
+---
+title: "Owner_Alex_Thompson"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Questions
+**Name?**
+
+Alex Thompson
+
+**What do I tell people about my field of study?**
+
+It's boring and I'm in it for the money
+
+**Most important tools for organizing my work? **
+
+For programming git is the best tool for managing verisions, at elast that is free and used by a lot of people
+
+**Interesting Fact?**
+
+I am a herpetologist, which means I keep and raise a lot of reptiles, ask me about my chameleon!
+
+
+## Understanding Concepts
+**Explain the diffrence between git and github**
+
+Well git is the verison control system where github is just a company that hosts servers for git repos. There are many other companies that offer similar products.
+
+**Can Git and Github be used independently? Why don’t we do so? Describe the advantages and disadvantages. **
+
+Yes they could be, I mean you could host your own servers for verision control, or use another company other than Github for this. Why we don't do this, because having a remote service that is reputably stable like github is the safest and most secure way to use the git system. This would be the advantages, the disadvantages are that you are dependent on a remote service for your work that you must constantly connect to in order to commit push and pull the work.
+
+**What is a repository in Git and how can you create a repository in Git (write out the command(s))?**
+
+A repository is a place where the history of verisions are saved. Like a workspace with the history of the workspace mantained. To make a new repo find the directory where you would like to start it, then in bash send the command *git init* while in the directory. Then to add files to it you use *git add 'filename'* then to finally commit these changes use *git commit -m 'Some Message'*
+
+### Coding Exercises
+
+**1) Write code to count the total number of NA occurrences in the vector X = c(47,34,33,65,37,NA,43,NA,11,NA,23,NA).**
+
+```{r}
+x = c(47,34,33,65,37,NA,43,NA,11,NA,23,NA)
+amount = 0
+for(i in x)
+{
+  if(is.na(i))
+  {
+    amount = amount + 1
+  }
+}
+print(amount)
+```
+
+
+**2)Run the following code:**
+
+```{r}
+age = c(25,30,45,60,12,41)
+smoker = c('T','F','T','F','F','F')
+weight = c(120,137,0,168,91,142)
+example_data = data.frame(age,smoker,weight)
+```
+
+**Correct the entry error**
+
+```{r}
+weight[3] = 150
+print(weight)
+```
+
+**3) In the following I have two code snippets. Turn these code snippets into functions. Think about what each function does and what you would name it. How many arguments does it need? **
+
+```{r}
+mean(is.na(x))
+
+x / sum(x, na.rm = TRUE)
+```
+
+The first one only needs one argument, a vector, and says what percentage of it is NA. The second one requires two arguments, a vector and property to be set and says how much of the sum each value in the vector makes up. I would name the first one percentNa and the second percentOfSum
+
+**4) Write a function named both_na(). This function take two vectors of the same length and returns the number of positions that have an NA value in both vectors. **
+
+```{r}
+both_na <- both_na(x,y)
+{
+  amount = 0;
+  for(i in x)
+  {
+    for(y in x)
+    {
+      if(is.na(x) && is.na(y))
+      {
+        amount = amount + 1
+      }
+    }
+  }
+  return(amount)
+}
+
